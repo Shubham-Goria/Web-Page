@@ -1,6 +1,11 @@
 .intro-2 {
-    background: url("railroad-tracks.jpg")no-repeat center center;
+    background: url("rail-tracks.jpg")no-repeat center center;
     background-size: cover;
+    background-attachment: fixed;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
 .top-nav-collapse {
     background-color: #3f51b5 !important;
@@ -14,17 +19,22 @@
     }
 }
 .hm-gradient .full-bg-img {
-    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
-    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
-    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(29, 210, 177, 0.6)));
-    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
-    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: -moz-linear-gradient(270deg, rgba(15, 0, 26, 0.7), rgba(15, 0, 26, 0.7) 100%);
+    background: -webkit-linear-gradient(293deg, rgba(15, 0, 26, 0.7), rgba(15, 0, 26, 0.7) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(15, 0, 26, 0.7)), to(rgba(15, 0, 26, 0.7)));
+    background: -o-linear-gradient(45deg, rgba(15, 0, 26, 0.7), rgba(15, 0, 26, 0.7) 100%);
+
 }
+
 .card {
     background-color: rgba(229, 228, 255, 0.2);
 }
 .separate {
-    background-color: rgba(229, 228, 255, 0.2);
+    background: -moz-linear-gradient(45deg, rgba(229,228,255, 0.2), rgba(229,228,255, 0.2) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(229,228,255, 0.2), rgba(229,228,255, 0.2) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(229,228,255, 0.2)), to(rgba(229,228,255, 0.2)));
+    background: -o-linear-gradient(45deg, rgba(229,228,255, 0.2), rgba(229,228,255, 0.2) 100%);
+
 }
 .separate-1 {
     background-color: rgba(229, 228, 255, 0.3);
@@ -41,7 +51,7 @@
     color: #ffffff;
 }
 h6 {
-    line-height: 1.7;
+    line-height: 1.5;
 }
 @media (max-width: 740px) {
     .full-height,
@@ -51,3 +61,27 @@ h6 {
         height: 1040px;
     }
 }
+/*
+@include media-breakpoint-up(sm){
+    .someclass{
+        display: block;
+    }
+
+.hm-gradient .full-bg-img {
+    background: -moz-linear-gradient(270deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: -webkit-linear-gradient(293deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(29, 210, 177, 0.6)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+
+}
+
+.card {
+    background-color: rgba(229, 228, 255, 0.2);
+}
+/*
+@include media-breakpoint-up(sm){
+    .someclass{
+        display: block;
+    }
+}
+*/
